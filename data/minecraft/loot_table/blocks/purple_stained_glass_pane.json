@@ -1,0 +1,90 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"conditions": [
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"predicates": {
+							"minecraft:enchantments": [
+								{
+									"enchantments": "minecraft:silk_touch",
+									"levels": {
+										"min": 1
+									}
+								}
+							]
+						}
+					}
+				},
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"dimension": "rift:the_rift"
+						}
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:purple_stained_glass_pane"
+				}
+			],
+			"rolls": 1
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:poisonous_potato",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_model": "minecraft:player_head",
+								"minecraft:profile": {
+									"properties": [
+										{
+											"name": "textures",
+											"value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzI1ZTI5YmZmZTRkMTQ5ODdlOTU1MmYzNjMwMjA0OTU0MjMxYTcwZWQxM2ZiZTdkZmM1NzU0YmI3ZTllNzMyYzMifX19"
+										}
+									]
+								},
+								"minecraft:item_name": "Obsolite",
+								"minecraft:custom_data": {
+									"id": "obsolite"
+								},
+								"!minecraft:consumable": {}
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+                {
+                    "condition": "minecraft:match_tool",
+                    "predicate": {
+                        "predicates": {
+                            "minecraft:custom_data": {
+                                "id": "chrono_pickaxe"
+                            }
+                        }
+                    }
+				},
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "rift:the_rift"
+					}
+				}
+			]
+		}
+	],
+	"random_sequence": "minecraft:blocks/purple_stained_glass_pane"
+}

@@ -1,0 +1,1 @@
+kill @e[type=experience_orb, predicate=rift:in_rift]

@@ -1,0 +1,1 @@
+$data merge storage rift:craft_info {cur_item: {id: $(id)}}

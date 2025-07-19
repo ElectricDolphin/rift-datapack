@@ -1,0 +1,1 @@
+$damage @s $(rift_damage)

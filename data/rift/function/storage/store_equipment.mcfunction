@@ -1,0 +1,1 @@
+$data merge storage rift:store_items_info {equipment: $(equipment)}

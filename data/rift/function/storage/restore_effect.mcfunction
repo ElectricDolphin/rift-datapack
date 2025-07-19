@@ -1,0 +1,2 @@
+$execute if data storage rift:restore_storage_info effects[0].show_particles run effect give @s $(id) $(duration) $(amplifier) true
+$execute unless data storage rift:restore_storage_info effects[0].show_particles run effect give @s $(id) $(duration) $(amplifier) false

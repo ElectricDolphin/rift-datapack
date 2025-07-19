@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:dialog_list",
+	"title": "Rift Menu",
+	"pause": false,
+	"exit_action": {
+		"label": "Close"
+	},
+	"columns": 1,
+	"dialogs": [
+		"rift:crafting/main", "rift:rift_exit_confirmation"
+	]
+}

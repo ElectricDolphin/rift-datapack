@@ -1,0 +1,1 @@
+$execute store result storage rift:restore_storage_info item_count int 1 run data get storage rift:$(dimension)_items_$(uuid) Inventory

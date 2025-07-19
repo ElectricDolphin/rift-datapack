@@ -1,0 +1,2 @@
+execute if score @s rift_time matches 60.. run title @s actionbar ["Rift Time: ", {"score":{"name":"@s","objective":"rift_time_minutes"}}, "m ", {"score":{"name":"@s","objective":"rift_time_seconds"}}, "s"]
+execute if score @s rift_time matches ..59 run title @s actionbar ["Rift Time: ", {"score":{"name":"@s","objective":"rift_time_seconds"}}, "s"]

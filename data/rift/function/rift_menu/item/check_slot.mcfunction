@@ -1,0 +1,1 @@
+execute unless items entity @s hotbar.8 poisonous_potato[custom_data={is_rift_menu: 1b}] run function rift:rift_menu/item/replace_menu

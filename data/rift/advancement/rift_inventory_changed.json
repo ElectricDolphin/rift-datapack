@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"inventory_changed": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"player": {
+					"location": {
+						"dimension": "rift:the_rift"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "rift:inventory/rift_inventory_changed"
+	}
+}

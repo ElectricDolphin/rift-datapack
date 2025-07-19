@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "rift:oak_checked",
+    "features": [
+      {
+        "chance": 0.008325,
+        "feature": "rift:fallen_spruce_tree"
+      },
+      {
+        "chance": 0.666,
+        "feature": "rift:spruce_checked"
+      },
+      {
+        "chance": 0.1,
+        "feature": "rift:fancy_oak_checked"
+      },
+      {
+        "chance": 0.0125,
+        "feature": "rift:fallen_oak_tree"
+      }
+    ]
+  }
+}

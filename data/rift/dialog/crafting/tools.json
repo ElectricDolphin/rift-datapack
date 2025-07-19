@@ -1,0 +1,184 @@
+{
+	"type": "minecraft:multi_action",
+	"title": "Weapon Crafting",
+	"external_title": "Weapons",
+	"pause": false,
+	"exit_action": {
+		"label": "Close"
+	},
+	"body": [
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:diamond_pickaxe",
+				"components": {
+					"minecraft:item_name": "Self-Recursive Pickaxe",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 5,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/recursive_pickaxe"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "6 nullified metal\n24 wilted berberis\n1 Leech Sword",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:wooden_pickaxe",
+				"components": {
+					"minecraft:item_name": "Anti-Sentient Pickaxe",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 5,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/anti_sentient_pickaxe"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "32 living stone\n16 living metal",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:golden_pickaxe",
+				"components": {
+					"minecraft:item_name": "Eon Pickaxe",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 5,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/eon_pickaxe"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "32 youngite\n1 Anti-Sentient Pickaxe",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:iron_pickaxe",
+				"components": {
+					"minecraft:item_name": "Chrono Pickaxe",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 5,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/chrono_pickaxe"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "64 timite\n1 Eon Pickaxe",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		}
+	],
+	"actions": [
+		{
+			"label": "Back",
+			"action": {
+				"type": "show_dialog",
+				"dialog": "rift:crafting/main"
+			}
+		}
+	]
+}

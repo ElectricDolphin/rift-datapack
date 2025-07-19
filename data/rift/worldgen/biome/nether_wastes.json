@@ -1,0 +1,78 @@
+{
+    "carvers": "minecraft:nether_cave",
+    "downfall": 0.5,
+    "effects": {
+        "additions_sound": {
+            "sound": "minecraft:ambient.nether_wastes.additions",
+            "tick_chance": 0.0111
+        },
+        "ambient_sound": "minecraft:ambient.nether_wastes.loop",
+        "fog_color": 10518688,
+        "mood_sound": {
+            "block_search_extent": 8,
+            "offset": 2.0,
+            "sound": "minecraft:ambient.nether_wastes.mood",
+            "tick_delay": 6000
+        },
+        "music": [
+            {
+                "data": {
+                    "sound": "minecraft:music.end",
+                    "min_delay": 0,
+                    "max_delay": 0,
+                    "replace_current_music": false
+                },
+                "weight": 1
+            }
+        ],
+        "music_volume": 1.0,
+        "sky_color": 0,
+        "water_color": 4159204,
+        "water_fog_color": 329011
+    },
+    "features": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        [
+            "rift:spring_open",
+            "rift:patch_fire",
+            "rift:patch_soul_fire",
+            "rift:glowstone_extra",
+            "rift:glowstone",
+            "rift:brown_mushroom_nether",
+            "rift:red_mushroom_nether",
+            "rift:ore_magma",
+            "rift:spring_closed",
+            "rift:ore_gravel_nether",
+            "rift:ore_blackstone",
+            "rift:ore_gold_nether",
+            "rift:ore_quartz_nether",
+            "rift:ore_ancient_debris_large",
+            "rift:ore_debris_small"
+        ],
+        [],
+        [
+            "rift:spring_lava",
+            "rift:brown_mushroom_normal",
+            "rift:red_mushroom_normal"
+        ]
+    ],
+    "has_precipitation": false,
+    "spawn_costs": {},
+    "spawners": {
+        "ambient": [],
+        "axolotls": [],
+        "creature": [],
+        "misc": [],
+        "monster": [],
+        "underground_water_creature": [],
+        "water_ambient": [],
+        "water_creature": []
+    },
+    "temperature": 2.0
+}

@@ -1,0 +1,8 @@
+{
+    "feature": "rift:end_spike",
+    "placement": [
+        {
+            "type": "minecraft:biome"
+        }
+    ]
+}

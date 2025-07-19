@@ -1,0 +1,106 @@
+{
+    "carvers": [
+        "minecraft:cave",
+        "minecraft:cave_extra_underground",
+        "minecraft:canyon"
+    ],
+    "downfall": 0.5,
+    "effects": {
+        "fog_color": 10518688,
+        "mood_sound": {
+            "block_search_extent": 8,
+            "offset": 2.0,
+            "sound": "minecraft:ambient.cave",
+            "tick_delay": 6000
+        },
+        "music": [
+            {
+                "data": {
+                    "sound": "minecraft:music.end",
+                    "min_delay": 0,
+                    "max_delay": 0,
+                    "replace_current_music": false
+                },
+                "weight": 1
+            }
+        ],
+        "music_volume": 1.0,
+        "sky_color": 0,
+        "water_color": 4159204,
+        "water_fog_color": 329011
+    },
+    "features": [
+        [],
+        [
+            "rift:lake_lava_underground",
+            "rift:lake_lava_surface"
+        ],
+        [
+            "rift:amethyst_geode"
+        ],
+        [
+            "rift:monster_room",
+            "rift:monster_room_deep"
+        ],
+        [],
+        [],
+        [
+            "rift:ore_dirt",
+            "rift:ore_gravel",
+            "rift:ore_granite_upper",
+            "rift:ore_granite_lower",
+            "rift:ore_diorite_upper",
+            "rift:ore_diorite_lower",
+            "rift:ore_andesite_upper",
+            "rift:ore_andesite_lower",
+            "rift:ore_tuff",
+            "rift:ore_coal_upper",
+            "rift:ore_coal_lower",
+            "rift:ore_iron_upper",
+            "rift:ore_iron_middle",
+            "rift:ore_iron_small",
+            "rift:ore_gold",
+            "rift:ore_gold_lower",
+            "rift:ore_redstone",
+            "rift:ore_redstone_lower",
+            "rift:ore_diamond",
+            "rift:ore_diamond_medium",
+            "rift:ore_diamond_large",
+            "rift:ore_diamond_buried",
+            "rift:ore_lapis",
+            "rift:ore_lapis_buried",
+            "rift:ore_copper",
+            "rift:underwater_magma",
+            "rift:disk_sand",
+            "rift:disk_clay",
+            "rift:disk_gravel",
+            "rift:ore_emerald"
+        ],
+        [
+            "rift:ore_infested"
+        ],
+        [
+            "rift:spring_water",
+            "rift:spring_lava"
+        ],
+        [
+            "rift:glow_lichen"
+        ],
+        [
+            "rift:freeze_top_layer"
+        ]
+    ],
+    "has_precipitation": false,
+    "spawn_costs": {},
+    "spawners": {
+        "ambient": [],
+        "axolotls": [],
+        "creature": [],
+        "misc": [],
+        "monster": [],
+        "underground_water_creature": [],
+        "water_ambient": [],
+        "water_creature": []
+    },
+    "temperature": 1.0
+}

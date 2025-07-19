@@ -1,0 +1,101 @@
+{
+	"type": "minecraft:block",
+	"pools": [
+		{
+			"bonus_rolls": 0,
+			"entries": [
+				{
+					"type": "minecraft:alternatives",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"conditions": [
+								{
+									"condition": "minecraft:match_tool",
+									"predicate": {
+										"predicates": {
+											"minecraft:enchantments": [
+												{
+													"enchantments": "minecraft:silk_touch",
+													"levels": {
+														"min": 1
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"name": "minecraft:lapis_ore"
+						},
+						{
+							"type": "minecraft:item",
+							"functions": [
+								{
+									"add": false,
+									"count": {
+										"type": "minecraft:uniform",
+										"max": 9,
+										"min": 4
+									},
+									"function": "minecraft:set_count"
+								},
+								{
+									"enchantment": "minecraft:fortune",
+									"formula": "minecraft:ore_drops",
+									"function": "minecraft:apply_bonus"
+								},
+								{
+									"function": "minecraft:explosion_decay"
+								}
+							],
+							"name": "minecraft:lapis_lazuli"
+						}
+					]
+				}
+			],
+			"rolls": 1,
+			"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"dimension": "rift:the_rift"
+						}
+					}
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:blue_stained_glass",
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "Living Metal",
+								"minecraft:custom_data": {
+									"id": "living_metal"
+								},
+								"minecraft:enchantment_glint_override": true
+							}
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:location_check",
+					"predicate": {
+						"dimension": "rift:the_rift"
+					}
+				}
+			]
+		}
+	],
+	"random_sequence": "minecraft:blocks/lapis_ore"
+}

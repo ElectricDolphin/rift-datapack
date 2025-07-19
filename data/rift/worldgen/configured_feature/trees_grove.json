@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "rift:spruce_on_snow",
+    "features": [
+      {
+        "chance": 0.33333334,
+        "feature": "rift:pine_on_snow"
+      }
+    ]
+  }
+}

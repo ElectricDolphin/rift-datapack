@@ -1,0 +1,15 @@
+{
+	"criteria": {
+		"entity_hit_player": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"taken": {
+						"min": 0,
+						"max": 0.011
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "Crafting",
+    "pause": false,
+    "actions": [
+        {
+            "label": "Weapons",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:crafting/weapons"
+            }
+        },
+        {
+            "label": "Armor",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:crafting/weapons"
+            }
+        },
+        {
+            "label": "Tools",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:crafting/tools"
+            }
+        },
+        {
+            "label": "Materials",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:crafting/weapons"
+            }
+        },
+        {
+            "label": "Consumables",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:crafting/weapons"
+            }
+        },
+        {
+            "label": "Misc",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:crafting/weapons"
+            }
+        },
+        {
+            "label": "Back",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "rift:rift_menu"
+            }
+        }
+    ]
+
+}

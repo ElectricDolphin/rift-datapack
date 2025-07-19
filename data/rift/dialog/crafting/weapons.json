@@ -1,0 +1,143 @@
+{
+	"type": "minecraft:multi_action",
+	"title": "Weapon Crafting",
+	"external_title": "Weapons",
+	"pause": false,
+	"exit_action": {
+		"label": "Close"
+	},
+	"body": [
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:wooden_sword",
+				"components": {
+					"minecraft:item_name": "Wyld Sword",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 2,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/wyld_sword"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "12 rift wood\n3 shy cruxes",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:wooden_sword",
+				"components": {
+					"minecraft:item_name": "Leech Sword",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 3,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/leech_sword"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "12 deadgehog spines\n4 leech fragments\n1 Wyld Sword",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		},
+		{
+			"type": "minecraft:item",
+			"item": {
+				"id": "minecraft:diamond_pickaxe",
+				"components": {
+					"minecraft:item_name": "Self-Recursive Pickaxe",
+					"minecraft:attribute_modifiers": [
+						{
+							"type": "minecraft:attack_damage",
+							"id": "rift:atk",
+							"amount": 5,
+							"operation": "add_value",
+							"slot": "mainhand"
+						}
+					]
+				}
+			}
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Craft",
+				"click_event": {
+					"action": "run_command",
+					"command": "function rift:craft/recursive_pickaxe"
+				},
+				"hover_event": {
+					"action": "show_text",
+					"value": [
+                        {
+                            "text": "Cost:\n",
+                            "bold": true
+                        },
+                        {
+                            "text": "6 nullified metal\n24 wilted berberis\n1 Leech Sword",
+                            "bold": false
+                        }
+                    ]
+				}
+			}
+		}
+	],
+	"actions": [
+		{
+			"label": "Back",
+			"action": {
+				"type": "show_dialog",
+				"dialog": "rift:crafting/main"
+			}
+		}
+	]
+}

@@ -1,0 +1,1 @@
+$clear @s *[custom_data~{id: "$(id)"}] $(count)

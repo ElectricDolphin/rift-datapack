@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "rift:jungle_tree",
+    "features": [
+      {
+        "chance": 0.1,
+        "feature": "rift:fancy_oak_checked"
+      },
+      {
+        "chance": 0.5,
+        "feature": "rift:jungle_bush"
+      },
+      {
+        "chance": 0.0125,
+        "feature": "rift:fallen_jungle_tree"
+      }
+    ]
+  }
+}

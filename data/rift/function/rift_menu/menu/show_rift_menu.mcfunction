@@ -1,0 +1,1 @@
+dialog show @s rift:rift_menu

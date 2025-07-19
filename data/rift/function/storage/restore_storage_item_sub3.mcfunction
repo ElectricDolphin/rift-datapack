@@ -1,0 +1,1 @@
+$data merge storage rift:restore_items_info {item: {components: $(components)}}

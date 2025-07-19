@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:confirmation",
+	"title": "Are you sure?",
+	"external_title": "Exit Rift",
+    "pause": false,
+	"body": {
+		"type": "minecraft:plain_message",
+		"contents": "Are you sure you want to exit the rift?"
+	},
+	"yes": {
+		"label": "Yes",
+		"action": {
+			"type": "run_command",
+			"command": "function rift:to_overworld"
+		}
+	},
+	"no": {
+		"label": "No",
+		"action": {
+			"type": "show_dialog",
+			"dialog": "rift:rift_menu"
+		}
+	}
+}
